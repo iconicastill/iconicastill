@@ -140,9 +140,9 @@ header label{
 	position: relative;
 	width: 25vh;
 	animation: float 3s linear infinite;
-} */
+}
 
-/* @keyframes float{
+@keyframes float{
 	0%, 100%{
 		transform: translateY(0rem);
 	}
@@ -184,12 +184,12 @@ header label{
 	margin: 5rem 0;
 } */
 
-.acerca_de .columna{
-	/* display: flex; */
-	/* align-items: center;
-	justify-content: center; */
+/* .acerca_de .columna{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	padding: 5rem 0;
-}
+} */
 
 .acerca_de .columna image{
 	flex: 1 1 40rem;
@@ -211,6 +211,10 @@ header label{
 	color: #333;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+.acerca_de .columna .content .info{
+	margin: 50px 0 50px 0;
 }
 
 .acerca_de .columna .content h3 span{
