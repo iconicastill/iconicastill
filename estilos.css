@@ -53,6 +53,10 @@ section{
 	color: white;
 }
 
+a.btn {
+    padding-right: 5rem;
+}
+
 .btn:hover{
 	transform: scale(1.1);
 }
