@@ -61,6 +61,10 @@ a.btn {
 	transform: scale(1.1);
 }
 
+i {
+    margin-inline: 1rem;
+}
+
 .heading{
 	text-align: center;
 	background: var(--verde);
