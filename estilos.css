@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
 :root{
-	--verde: #000000;
-	--limon: #7a7a7a;
-	--rosa: #000000;
-	--fondo: #ffffff;
-	--degradado: linear-gradient(90deg, var(--limon), var(--verde));
-	--textFooter: rgb(255, 255, 255);
+	--color01: #000000;
+	--color02: #7a7a7a;
+	--color03: #000000;
+	--color04: #ffffff;
+	--color05: linear-gradient(90deg, var(--color02), var(--color01));
+	--color06: rgb(255, 255, 255);
 }
 
 *{
@@ -20,7 +20,7 @@
 }
 
 *::selection{
-	background: var(--limon);
+	background: var(--color02);
 	color: white;
 }
 
@@ -30,7 +30,7 @@ html{
 }
 
 body{
-	background-color: var(--fondo);
+	background-color: var(--color04);
 }
 
 section{
@@ -45,7 +45,7 @@ section{
 	margin-top: 1rem;
 	padding: .8rem 1rem;
 	border-radius: 5rem;
-	background: var(--degradado);
+	background: var(--color05);
 	font-size: 1.8rem;
 	cursor: pointer;
 	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
@@ -67,7 +67,7 @@ i {
 
 .heading{
 	text-align: center;
-	background: var(--verde);
+	background: var(--color01);
 	color: transparent;
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -78,7 +78,7 @@ i {
 
 h3.heading{
 	font-size: 3rem;
-	color: var(--limon);
+	color: var(--color02);
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -100,21 +100,21 @@ header{
 
 header .logo{
 	font-size: 2rem;
-	color: var(--verde);	
+	color: var(--color01);	
 }
 
 header .logo span{
-	color: var(--limon);
+	color: var(--color02);
 }
 
 header .navbar a{
 	font-size: 1.8rem;
 	margin-left: 2rem;
-	color: var(--verde);
+	color: var(--color01);
 }
 
 header .navbar a:hover{
-	color: var(--limon);
+	color: var(--color02);
 }
 
 header input{
@@ -123,7 +123,7 @@ header input{
 
 header label{
 	font-size: 3rem;
-	color: var(--verde);
+	color: var(--color01);
 	cursor: pointer;
 	visibility: hidden;
 	opacity: 0;
@@ -226,7 +226,7 @@ header label{
 }
 
 .acerca_de .columna .content h3 span{
-	color: var(--limon);
+	color: var(--color02);
 }
 
 .acerca_de .columna .content p{
@@ -303,11 +303,11 @@ header label{
 	font-size: 1.7rem;
 	border-radius: 5rem;
 	cursor: pointer;
-	color: var(--verde);
+	color: var(--color01);
 }
 
 .suscribete form input[type="submit"]:hover{
-	color: var(--limon);
+	color: var(--color02);
 }
 
 .contactos{
@@ -378,14 +378,14 @@ header label{
 .contactos form .inputcaja textarea:valid ~ label{
 	top: -.5rem;
 	font-size: 1.5rem;
-	color: var(--limon);
+	color: var(--color02);
 
 }
 
 .footer{
 	padding-top: 3rem;
 	/* background: url(/img/footer-fondo.png) no-repeat; */
-	background-color: var(--rosa);
+	background-color: var(--color03);
 	background-size: cover;
 	background-position: center;
 }
@@ -406,7 +406,7 @@ header label{
 .footer .caja-contenedor .caja h3{
 	font-size: 2rem;
 	padding: 1rem 0;
-	color: var(--textFooter);
+	color: var(--color06);
 	/* text-decoration: underline rgb(255, 254, 255); */
 	/* text-underline-offset: 0.5rem; */
 	/* -webkit-text-stroke: 0.05px rgb(180, 43, 180); */
@@ -415,7 +415,7 @@ header label{
 .footer .caja-contenedor .caja p{
 	font-size: 1.4rem;
 	padding: 1.4rem 0;
-	color: var(--textFooter);
+	color: var(--color06);
 }
 
 .footer .caja-contenedor .caja p.texto{
@@ -426,7 +426,7 @@ header label{
 	display: block;
 	font-size: 2rem;
 	padding: .5rem 0;
-	color: var(--textFooter);
+	color: var(--color06);
 }
 
 .footer .caja-contenedor .caja a:hover{
@@ -444,7 +444,7 @@ header label{
 	margin-right: 1rem;
 	border-radius: 50%;
 	background: rgb(255, 255, 255);
-	color: var(--verde);
+	color: var(--color01);
 	font-size: 1.8rem;
 	height: 4.5rem;
 	width: 4.5rem;
@@ -461,7 +461,7 @@ header label{
 	font-size: 1.5rem;
 	font-weight: normal;
 	letter-spacing: .1rem;
-	color: var(--textFooter);
+	color: var(--color06);
 	border-top: .1rem solid rgb(151, 64, 64);
 	padding: 2.5rem 1rem;
 	text-align: center;
