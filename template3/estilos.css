@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
 :root{
-	--color1: #000000;
-	--color2: #7a7a7a;
-	--color3: #ffffff;
-	--color4: linear-gradient(90deg, var(--color02), var(--color01));
+	--color1: #5e1212;
+	--color2: #a61c1c;
+	--color3: #c06262;
+	--color4: linear-gradient(90deg, var(--color2), var(--color1));
 }
 
 *{
@@ -493,7 +493,7 @@ header label{
 .contactos form .inputcaja textarea{
 	width: 100%;
 	background: none;
-	color: var(--color2);
+	color: #333;
 	margin: 1.5rem 0;
 	padding: .5rem 0;
 	font-size: 1.7rem;
@@ -511,7 +511,7 @@ header label{
 	top: 1.7rem;
 	left: 0;
 	font-size: 1.7rem;
-	color: var(--color2);
+	color: #666;
 	transition: .2s linear;
 }
 
@@ -549,13 +549,16 @@ header label{
 .footer .caja-contenedor .caja h3{
 	font-size: 2rem;
 	padding: 1rem 0;
-	color: var(--color1);
+	color: rgb(0, 0, 0);
+	/* text-decoration: underline rgb(255, 254, 255); */
+	/* text-underline-offset: 0.5rem; */
+	/* -webkit-text-stroke: 0.05px rgb(180, 43, 180); */
 }
 
 .footer .caja-contenedor .caja p{
 	font-size: 1.4rem;
 	padding: 1.4rem 0;
-	color: var(--color1);
+	color: rgb(0, 0, 0);
 }
 
 .footer .caja-contenedor .caja p.texto{
@@ -566,7 +569,7 @@ header label{
 	display: block;
 	font-size: 2rem;
 	padding: .5rem 0;
-	color: var(--color1);
+	color: rgb(5, 5, 5);
 }
 
 .footer .caja-contenedor .caja a:hover{
@@ -583,7 +586,7 @@ header label{
 	margin: .5rem 0;
 	margin-right: 1rem;
 	border-radius: 50%;
-	background: var(--color2);
+	background: rgb(117, 46, 46);
 	color: var(--color1);
 	font-size: 1.8rem;
 	height: 4.5rem;
@@ -601,8 +604,8 @@ header label{
 	font-size: 1.5rem;
 	font-weight: normal;
 	letter-spacing: .1rem;
-	color: var(--color3);
-	border-top: .1rem solid var(--color2);
+	color: rgb(255, 255, 255);
+	border-top: .1rem solid rgb(151, 64, 64);
 	padding: 2.5rem 1rem;
 	text-align: center;
 }
@@ -635,7 +638,7 @@ header label{
 		top: 100%;
 		left: 0;
 		width: 100%;
-		background: var(--color3);
+		background: white;
 		padding: 1rem 2rem;
 		border-top: 1rem solid rgba(0, 0, 0, .2);
 		box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
