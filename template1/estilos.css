@@ -4,7 +4,7 @@
 	--color1: #000000;
 	--color2: #7a7a7a;
 	--color3: #ffffff;
-	--color4: linear-gradient(90deg, var(--color02), var(--color01));
+	--color4: linear-gradient(90deg, var(--color2), var(--color1));
 }
 
 *{
