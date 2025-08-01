@@ -220,7 +220,7 @@ header label{
 	padding: 5rem 0;
 }
 
-.acerca_de .columna image{
+.acerca_de .columna .image{
 	flex: 1 1 40rem;
 }
 
@@ -261,7 +261,8 @@ header label{
 	padding: 5rem 2rem;
 	background: url(/img/fondo_sub.png) no-repeat;
 	 background-size: cover;
-	 position: center;
+	 /*position: center;*/
+	 background-position: center;
 	 margin: 7rem 0 5rem;
 }
 
