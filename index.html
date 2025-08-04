@@ -136,27 +136,27 @@
 		<div class="image">
 			<center><img src="/img/form_img.png" alt=""></center>
 		</div>
-		<form id="form" action="">
-			<h1 class="heading">ESCRIBENOS</h1>
-			<div class="inputcaja">
-				<input id="name" name="name" type="text" required>
-				<label for="name">nombre</label>
-			</div>
-			<div class="inputcaja">
-				<input id="email" name="email" type="email" required>
-				<label for="email">email</label>
-			</div>
-			<div class="inputcaja">
-				<input id="number" name="number" type="number" required>
-				<label for="number">telefono</label>
-			</div>
-			<div class="inputcaja">
-				<textarea id="message" name="message" required cols="30" rows="10"></textarea>
-				<label for="message">mensaje</label>
-			</div>
-			<input type="submit" class="btn" value="ENVIAR">
-		</form>
-		<a href="mailto:nicolascastillocamacho@gmail.com" id="trucazo">email</a>
+<form method="POST" action="/contacto/">
+    {% csrf_token %}
+    <div class="inputcaja">
+        <input type="text" name="nombre" required>
+        <label>nombre</label>
+    </div>
+    <div class="inputcaja">
+        <input type="email" name="email" required>
+        <label>email</label>
+    </div>
+    <div class="inputcaja">
+        <input type="text" name="telefono" required>
+        <label>telefono</label>
+    </div>
+    <div class="inputcaja">
+        <textarea name="mensaje" required></textarea>
+        <label>mensaje</label>
+    </div>
+    <input type="submit" class="btn" value="ENVIAR">
+</form>
+
 	</section>
 	<div class="footer">
 		<div class="caja-contenedor">
@@ -202,3 +202,4 @@
 	</noscript>
 </body>
 </html>
+
