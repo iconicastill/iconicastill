@@ -159,19 +159,20 @@
     <input type="submit" class="btn" value="ENVIAR">
 </form>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Reemplaza esta URL con la de tu app de Django en Render
-        const tokenUrl = 'https://app.iconicastill.com/get-csrf-token/';
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector('#contact-form');
 
-        fetch(tokenUrl)
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('csrf_token_field').value = data.csrf_token;
-            })
-            .catch(error => {
-                console.error('Error al obtener el token CSRF:', error);
-            });
-    });
+    fetch('https://app.iconicastill.com/get-csrf-token/')
+        .then(response => response.json())
+        .then(data => {
+            const csrfInput = document.createElement('input');
+            csrfInput.type = 'hidden';
+            csrfInput.name = 'csrfmiddlewaretoken';
+            csrfInput.value = data.csrf_token;
+            form.appendChild(csrfInput);
+        })
+        .catch(error => console.error('Error al obtener el token CSRF:', error));
+});
 </script>
 	</section>
 	<div class="footer">
@@ -218,6 +219,7 @@
 	</noscript>
 </body>
 </html>
+
 
 
 
