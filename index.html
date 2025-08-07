@@ -139,42 +139,92 @@
 			<center><img src="/img/form_img.png" alt=""></center>
 		</div>
 		
-<form id="contact-form" method="POST" action="https://app.iconicastill.com/contacto/">
-    <div class="inputcaja">
-        <input type="text" name="nombre" required>
-        <label>nombre</label>
-    </div>
-    <div class="inputcaja">
-        <input type="email" name="email" required>
-        <label>email</label>
-    </div>
-    <div class="inputcaja">
-        <input type="text" name="telefono" required>
-        <label>telefono</label>
-    </div>
-    <div class="inputcaja">
-        <textarea name="mensaje" required></textarea>
-        <label>mensaje</label>
-    </div>
-    <input type="submit" class="btn" value="ENVIAR">
+<form id="contact-form">
+  <div class="inputcaja">
+    <input type="text" name="nombre" required>
+    <label>nombre</label>
+  </div>
+  <div class="inputcaja">
+    <input type="email" name="email" required>
+    <label>email</label>
+  </div>
+  <div class="inputcaja">
+    <input type="text" name="telefono" required>
+    <label>telefono</label>
+  </div>
+  <div class="inputcaja">
+    <textarea name="mensaje" required></textarea>
+    <label>mensaje</label>
+  </div>
+  <input type="submit" class="btn" value="ENVIAR">
 </form>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector('#contact-form');
 
-    fetch('https://app.iconicastill.com/get-csrf-token/', {
-  	credentials: 'include'})
-        .then(response => response.json())
-        .then(data => {
-            const csrfInput = document.createElement('input');
-            csrfInput.type = 'hidden';
-            csrfInput.name = 'csrfmiddlewaretoken';
-            csrfInput.value = data.csrf_token;
-            form.appendChild(csrfInput);
-        })
-        .catch(error => console.error('Error al obtener el token CSRF:', error));
+<script>
+// Función para obtener cookies
+function getCookie(name) {
+  let cookieValue = null;
+  if (document.cookie && document.cookie !== '') {
+    const cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+      const cookie = cookies[i].trim();
+      if (cookie.substring(0, name.length + 1) === (name + '=')) {
+        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+        break;
+      }
+    }
+  }
+  return cookieValue;
+}
+
+// Obtener el token CSRF y guardarlo como cookie
+fetch('https://app.iconicastill.com/get-csrf-token/', {
+  credentials: 'include'
+})
+.then(response => response.json())
+.then(data => {
+  document.cookie = `csrftoken=${data.csrf_token}; path=/; secure; samesite=None`;
+})
+.catch(error => console.error('Error al obtener el token CSRF:', error));
+
+// Enviar el formulario con fetch
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.querySelector('#contact-form');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formData = {
+      nombre: form.nombre.value,
+      email: form.email.value,
+      telefono: form.telefono.value,
+      mensaje: form.mensaje.value
+    };
+
+    fetch('https://app.iconicastill.com/contacto/', {
+      method: 'POST',
+      credentials: 'include',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRFToken': getCookie('csrftoken')
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(response => {
+      if (response.ok) {
+        alert('Mensaje enviado con éxito');
+        form.reset();
+      } else {
+        alert('Error al enviar el mensaje');
+      }
+    })
+    .catch(error => {
+      console.error('Error en el envío:', error);
+      alert('Hubo un problema al enviar el mensaje');
+    });
+  });
 });
 </script>
+
 	</section>
 	<div class="footer">
 		<div class="caja-contenedor">
@@ -220,6 +270,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	</noscript>
 </body>
 </html>
+
 
 
 
