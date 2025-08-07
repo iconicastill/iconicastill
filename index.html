@@ -137,8 +137,9 @@
 		<div class="image">
 			<center><img src="/img/form_img.png" alt=""></center>
 		</div>
-<form method="POST" action="/contacto/">
-    {% csrf_token %}
+		
+<form method="POST" action="https://app.iconicastill.com/contacto/">
+    <input type="hidden" name="csrfmiddlewaretoken" id="csrf_token_field">
     <div class="inputcaja">
         <input type="text" name="nombre" required>
         <label>nombre</label>
@@ -203,5 +204,6 @@
 	</noscript>
 </body>
 </html>
+
 
 
