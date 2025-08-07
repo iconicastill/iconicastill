@@ -339,7 +339,6 @@ header label{
 }
 
 .contactos .heading{
-	text-align: left;
 	padding: 0;
 	padding-bottom: 2rem;
 }
@@ -571,3 +570,4 @@ header label{
 #trucazo{
 	opacity: 0;
 }
+
