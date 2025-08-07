@@ -162,7 +162,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector('#contact-form');
 
-    fetch('https://app.iconicastill.com/get-csrf-token/')
+    fetch('https://app.iconicastill.com/get-csrf-token/', {
+  	credentials: 'include'})
         .then(response => response.json())
         .then(data => {
             const csrfInput = document.createElement('input');
@@ -219,6 +220,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	</noscript>
 </body>
 </html>
+
 
 
 
