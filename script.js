@@ -15,7 +15,7 @@ fetch('https://app.iconicastill.com/get-csrf-token/', {
 })
 .then(data => {
     // Almacenar el token en la variable global
-    csrfToken = data.csrfToken;
+    csrfToken = data.csrf_token;
     console.log('Token CSRF obtenido:', csrfToken);
 
     // Habilitar el formulario ahora que se tiene el token
@@ -72,3 +72,4 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
