@@ -162,77 +162,6 @@
   <input type="submit" class="btn" value="ENVIAR">
 </form>
 
-<!--<script>
-function getCookie(name) {
-  let cookieValue = null;
-  if (document.cookie && document.cookie !== '') {
-    const cookies = document.cookie.split(';');
-    for (let cookie of cookies) {
-      cookie = cookie.trim();
-      if (cookie.startsWith(name + '=')) {
-        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-        break;
-      }
-    }
-  }
-  return cookieValue;
-}
-
-// Obtener el token CSRF (no sobrescribas la cookie manualmente)
-fetch('https://app.iconicastill.com/get-csrf-token/', {
-  credentials: 'include'
-})
-.then(response => response.json())
-.then(data => {
-  console.log('Token CSRF obtenido:', data.csrf_token);
-})
-.catch(error => console.error('Error al obtener el token CSRF:', error));
-
-// Enviar el formulario con fetch
-document.addEventListener("DOMContentLoaded", function() {
-  const form = document.querySelector('#contact-form');
-
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const csrfToken = getCookie('csrftoken');
-    if (!csrfToken) {
-      alert('No se pudo obtener el token CSRF. Intenta recargar la página.');
-      return;
-    }
-
-    const formData = {
-      nombre: form.nombre.value,
-      email: form.email.value,
-      telefono: form.telefono.value,
-      mensaje: form.mensaje.value
-    };
-
-    fetch('https://app.iconicastill.com/contacto/', {
-      method: 'POST',
-      credentials: 'include',
-      headers: {
-        'Content-Type': 'application/json',
-        'X-CSRFToken': csrfToken
-      },
-      body: JSON.stringify(formData)
-    })
-    .then(response => {
-      if (response.ok) {
-        alert('Mensaje enviado con éxito');
-        form.reset();
-      } else {
-        alert('Error al enviar el mensaje');
-      }
-    })
-    .catch(error => {
-      console.error('Error en el envío:', error);
-      alert('Hubo un problema al enviar el mensaje');
-    });
-  });
-});
-</script>-->
-		
 	</section>
 	<div class="footer">
 		<div class="caja-contenedor">
@@ -278,24 +207,3 @@ document.addEventListener("DOMContentLoaded", function() {
 	</noscript>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
