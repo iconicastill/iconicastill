@@ -552,6 +552,13 @@ header label{
 		gap: 1rem;
 	}
 
+	table {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 20px auto;
+				font-size: 1.5rem;
+	}
+
 	/* Ajustes para la sección de contacto en móviles */
     .contact-content {
         flex-direction: column;
@@ -578,8 +585,17 @@ header label{
 	.acerca_de .columna .content .bottons a:last-child{
 		margin: 1rem 0;
 	}
+
+	table {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 20px auto;
+				font-size: 1.5rem;
+	}
+
 }
 
 #trucazo{
 	opacity: 0;
 }
+
