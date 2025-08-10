@@ -19,21 +19,21 @@
 
 *::selection{
 	background: var(--color2);
-	color: white;
+	color: var(--color3);
 }
 
 html{
 	font-size: 62.4%;
-	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
 
 body{
 	background-color: #f9f9f9;
+	overflow-x: hidden;
 }
 
 section{
-	min-height:  100vh;
+	min-height: 100vh;
 	padding: 0 9%;
 	padding-top: 6rem;
 	padding-bottom: 2rem;
@@ -49,7 +49,7 @@ section{
 	cursor: pointer;
 	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 	transition: all .3s linear;
-	color: white;
+	color: var(--color3);
 }
 
 .btn:hover{
@@ -65,6 +65,7 @@ section{
 	font-size: 3.5rem;
 	text-transform: uppercase;
 	padding: 1rem;
+	margin: 5rem 0; /* Aplicado a todos los headings */
 }
 
 header{
@@ -72,14 +73,13 @@ header{
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: white;
+	background-color: var(--color3);
 	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 	padding: 2rem 9%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	z-index: 1000;
-	/* margin-top: 26px; inserta nueva barra superior.  */
 }
 
 header .logo{
@@ -154,63 +154,52 @@ header label{
 	padding: 1rem 0;
 }
 
-.detalles{
-	/* margin: 7.5rem 0 0 0; */
+.detalles, .opiniones, .precios {
 	padding-top: 15rem;
-	min-height:  65vh;
 	padding-bottom: 15rem;
 }
 
-.detalles h1.heading{
-	margin: 5rem 0;
-}
-
-.detalles .caja-contenedor{
+.caja-contenedor{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 
-.detalles .caja-contenedor .caja{
+.caja-contenedor .caja{
 	flex: 1 1 30rem;
-	background: white;
-	border-radius: 0.5rem;
+	background: var(--color3);
 	border: .1rem solid rgba(0, 0, 0, .2);
 	box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
 	margin: 1.5rem;
-	padding: 3rem 2rem;
 	border-radius: .5rem;
 	text-align: center;
+}
+
+.detalles .caja {
+	padding: 3rem 2rem;
 	transition: .2s linear;
 }
 
-.detalles .caja-contenedor .caja h3{
+.detalles .caja h3{
 	font-size: 2rem;
 	color: #333;
 	padding-top: 1rem;
 }
 
-.detalles .caja-contenedor .caja p{
+.detalles .caja p{
 	font-size: 1.3rem;
 	color: #666;
 	padding: 1rem 0;
 }
 
-.detalles .caja-contenedor .caja img{
+.detalles .caja img{
 	height: 15rem;
 }
 
 .acerca_de{
-	/* background: url(/img/fondo_2.png) no-repeat; */
-	/* background-size: cover;
-	background-position: center; */
 	padding-top: 12rem;
 	padding-bottom: 12rem;
-}
-
-.acerca_de h1.heading{
-	margin: 5rem 0;
 }
 
 .acerca_de .columna{
@@ -223,12 +212,11 @@ header label{
 
 .acerca_de .columna .image{
 	flex: 1 1 40rem;
+	text-align: center; /* Centrado para la imagen */
 }
 
 .acerca_de .columna .image img{
 	width: 25%;
-	/* width: 400px; Alternativa a la Etiqueta <center> */
-	/* margin: 0 auto; */
 }
 
 .acerca_de .columna .content{
@@ -261,14 +249,13 @@ header label{
 	text-align: center;
 	padding: 5rem 2rem;
 	background: url(/img/fondo_sub.png) no-repeat;
-	 background-size: cover;
-	 /*position: center;*/
-	 background-position: center;
-	 margin: 7rem 0 5rem;
+	background-size: cover;
+	background-position: center;
+	margin: 7rem 0 5rem;
 }
 
 .suscribete h3{
-	color: white;
+	color: var(--color3);
 	font-size: 3rem;
 	text-transform: uppercase;
 }
@@ -288,7 +275,6 @@ header label{
 	border-radius: 5rem;
 	margin: 2rem auto;
 	height: 5.5rem;
-
 }
 
 .suscribete form input[type="email"]{
@@ -296,18 +282,18 @@ header label{
 	font-size: 1.7rem;
 	background: none;
 	width: 100%;
-	color: white;
+	color: var(--color3);
 	text-transform: none;
 	background: none;
 }
 
 .suscribete form input[type="email"]::placeholder{
-	color: white;
+	color: var(--color3);
 	text-transform: capitalize;
 }
 
 .suscribete form input[type="submit"]{
-	background: white;
+	background: var(--color3);
 	width: 20rem;
 	font-size: 1.7rem;
 	border-radius: 5rem;
@@ -319,45 +305,13 @@ header label{
 	color: var(--color2);
 }
 
-.opiniones{
-	min-height:  75vh;
-	padding-top: 15rem;
-	padding-bottom: 15rem;
-}
-
-.opiniones h1.heading{
-	margin: 5rem 0;
-}
-
-.opiniones .caja-contenedor{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-
-.opiniones .caja-contenedor .caja{
-	background: white;
-	margin: 1rem;
+.opiniones .caja {
 	padding: 1rem;
-	text-align: center;
 	position: relative;
-	border: .1rem solid rgba(0, 0, 0, .2);
-	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-	flex: 1 1 30rem;
-	border-radius: .5rem;
+	transition: .2s linear;
 }
 
-.opiniones .caja-contenedor .caja .fa-atom{
-	position: absolute;
-	top: 1rem;
-	right: 2rem;
-	font-size: 8rem;
-	color: var(--color2);
-	opacity: .3;
-}
-
-.opiniones .caja-contenedor .caja .user img{
+.opiniones .caja .user img{
 	border-radius: 50%;
 	object-fit: cover;
 	height: 15rem;
@@ -365,93 +319,66 @@ header label{
 	margin-top: 2rem;
 }
 
-.opiniones .caja-contenedor .caja .user h3{
+.opiniones .caja .user h3{
 	color: var(--color1);
 	font-size: 2rem;
 }
 
-.opiniones .caja-contenedor .caja .user .stars i{
+.opiniones .caja .user .stars i{
 	color: var(--color1);
 	font-size: 1.5rem;
 	padding: 1rem 0;
 }
 
-.opiniones .caja-contenedor .caja .comentarios{
+.opiniones .caja .comentarios{
 	color: #666;
 	font-size: 1.5rem;
 	padding: 1rem 5rem;
 }
 
-.precios{
-	min-height:  75vh;
-	padding-top: 10rem;
-	padding-bottom: 10rem;
-}
-
-.precios h1.heading{
-	margin: 5rem 0;
-}
-
-.precios h1.heading{
-	margin-bottom: 5rem;
-}
-
-.precios .caja-contenedor{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-
-.precios .caja-contenedor .caja{
+.precios .caja {
 	flex: 1 1 28rem;
-	margin: 1rem;
 	padding: 1rem;
-	background: white;
-	border: .1rem solid rgba(0, 0, 0, .2);
-	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-	border-radius: .5rem;
-	text-align: center;
 	padding-bottom: 3rem;
 }
 
-.precios .caja-contenedor .caja:nth-child(2),
-.precios .caja-contenedor .caja:hover{
+.precios .caja:nth-child(2),
+.precios .caja:hover{
 	border: .2rem solid var(--color2);
 }
 
-.precios .caja-contenedor .caja .titulo{
+.precios .caja .title{
 	color: var(--color1);
 	font-size: 2.5rem;
 	padding-top: 1rem;
 }
 
-.precios .caja-contenedor .caja .tipos{
+.precios .caja .tipos{
 	font-size: 4rem;
 	color: var(--color2);
 	padding: 1rem 0;
 }
 
-.precios .caja-contenedor .caja .tipos span{
+.precios .caja .tipos span{
 	font-size: 2rem;
 }
 
-.precios .caja-contenedor .caja ul{
+.precios .caja ul{
 	padding: 1rem 0;
 	list-style: none;
 }
 
-.precios .caja-contenedor .caja ul li{
+.precios .caja ul li{
 	font-size: 1.7rem;
 	color: #333;
 	padding: .5rem 0;
 }
 
-.precios .caja-contenedor .caja ul li .fa-check{
+.precios .caja ul li .fa-check{
 	color: lightgreen;
 }
 
-.precios .caja-contenedor .caja ul li .fa-xmark{
+.precios .caja ul li .fa-xmark{
 	color: red;
 }
 
@@ -466,6 +393,7 @@ header label{
 
 .contactos .image{
 	flex: 1 1 40rem;
+	text-align: center;
 }
 
 .contactos .image img{
@@ -485,13 +413,14 @@ header label{
 	text-align: left;
 	padding: 0;
 	padding-bottom: 2rem;
+	margin: 0; /* Sobrescribimos el margin del heading general */
 }
 
 .contactos form .inputcaja{
 	position: relative;
 }
 
-.contactos form .inputcaja input, 
+.contactos form .inputcaja input,
 .contactos form .inputcaja textarea{
 	width: 100%;
 	background: none;
@@ -517,19 +446,17 @@ header label{
 	transition: .2s linear;
 }
 
-.contactos form .inputcaja input:focus ~ label, 
+.contactos form .inputcaja input:focus ~ label,
 .contactos form .inputcaja input:valid ~ label,
 .contactos form .inputcaja textarea:focus ~ label,
 .contactos form .inputcaja textarea:valid ~ label{
 	top: -.5rem;
 	font-size: 1.5rem;
 	color: var(--color2);
-
 }
 
 .footer{
 	padding-top: 3rem;
-	/* background: url(/img/footer-fondo.png) no-repeat; */
 	background-color: var(--color3);
 	background-size: cover;
 	background-position: center;
@@ -603,7 +530,7 @@ header label{
 	font-size: 1.5rem;
 	font-weight: normal;
 	letter-spacing: .1rem;
-	color: var(--color3);
+	color: var(--color1); /* Cambiado a var(--color1) para que sea visible en el fondo blanco */
 	border-top: .1rem solid var(--color2);
 	padding: 2.5rem 1rem;
 	text-align: center;
@@ -682,7 +609,7 @@ header label{
 		background-position: right;
 	}
 
-	.suscribete  p{
+	.suscribete p{
 		width: auto;
 	}
 }
