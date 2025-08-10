@@ -244,73 +244,60 @@ header label{
 	padding-right: 1em;
 }
 
-.suscribete{
+/* SECCION DE GALERIA */
+
+.suscribete {
 	text-align: center;
 	padding: 5rem 2rem;
 	background: url(/img/fondo_sub.jpg) no-repeat;
 	background-size: cover;
-	 /*position: center;*/
 	background-position: center;
 	margin: 7rem 0 5rem;
 }
 
-.suscribete-text{
-	background-color: rgba(0, 0, 0, 0.2);
+.instagram-posts {
+	/* Estilos para el contenedor de las publicaciones */
 	padding: 2rem;
+	background-color: rgba(0, 0, 0, 0.2);
 	border-radius: 1rem;
 }
 
-.suscribete h3{
-	color: white;
-	font-size: 3rem;
-	text-transform: uppercase;
-}
-
-.suscribete p{
-	color: whitesmoke;
-	font-size: 1.6rem;
-	margin: 2rem auto;
-	width: 70rem;
-}
-
-.suscribete form{
+.post-contenedor {
+	/* Usamos Flexbox para organizar las publicaciones */
 	display: flex;
-	max-width: 70rem;
-	border: .2rem solid whitesmoke;
-	padding: .5rem;
-	border-radius: 5rem;
-	margin: 2rem auto;
-	height: 5.5rem;
-
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 2rem; /* Espacio entre las publicaciones */
+	margin-top: 2rem;
 }
 
-.suscribete form input[type="email"]{
-	padding: 0 2rem;
-	font-size: 1.7rem;
-	background: none;
+.instagram-posts h3.heading {
+	/* Estilos para el encabezado de la sección */
+	color: white; /* Aseguramos que el título sea visible */
+	text-align: center;
+}
+
+.instagram-post-card {
+	/* Estilos para cada publicación individual */
+	flex: 1 1 30rem; /* Cada tarjeta ocupa 30rem, se adaptará */
+	max-width: 30rem;
+	background: #fff;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+	border-radius: .5rem;
+	overflow: hidden;
+}
+
+.instagram-post-card img {
 	width: 100%;
-	color: white;
-	text-transform: none;
-	background: none;
+	display: block;
+	transition: transform .3s ease;
 }
 
-.suscribete form input[type="email"]::placeholder{
-	color: white;
-	text-transform: capitalize;
+.instagram-post-card img:hover {
+	transform: scale(1.05);
 }
 
-.suscribete form input[type="submit"]{
-	background: white;
-	width: 20rem;
-	font-size: 1.7rem;
-	border-radius: 5rem;
-	cursor: pointer;
-	color: var(--color01);
-}
-
-.suscribete form input[type="submit"]:hover{
-	color: var(--color02);
-}
+/* FIN DE LA SECCION DE GALERIA */
 
 .contactos{
 	padding-top: 2rem;
@@ -541,8 +528,8 @@ header label{
 		background-position: right;
 	}
 
-	.suscribete  p{
-		width: auto;
+	.post-contenedor {
+		gap: 1rem;
 	}
 }
 
@@ -570,4 +557,5 @@ header label{
 #trucazo{
 	opacity: 0;
 }
+
 
