@@ -493,6 +493,11 @@ header label{
 	section#inicio{
 		padding-top: 15rem;
 	}
+	
+	.contactos .image img{
+	width: 50%;
+	padding: 2rem;
+	}
 }
 
 @media(max-width:768px){
@@ -554,6 +559,11 @@ header label{
 	.post-contenedor {
 		gap: 1rem;
 	}
+
+	.contactos .image img{
+	width: 50%;
+	padding: 2rem;
+	}
 }
 
 @media(max-width:450px){
@@ -580,5 +590,6 @@ header label{
 #trucazo{
 	opacity: 0;
 }
+
 
 
