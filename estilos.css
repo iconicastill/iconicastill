@@ -299,12 +299,24 @@ header label{
 
 /* FIN DE LA SECCION DE GALERIA */
 
-.contactos{
+/* .contactos{
 	padding-top: 2rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+	padding-bottom: 4rem;
+} */
+
+/* INICIO DE LOS ESTILOS PARA LA SECCIÓN DE CONTACTO MODIFICADA */
+
+.contactos {
+    /* El contenedor principal de la sección ahora apila sus elementos verticalmente */
+	display: flex;
+    flex-direction: column;
+	align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center;
+	padding-top: 2rem;
 	padding-bottom: 4rem;
 }
 
@@ -557,3 +569,4 @@ header label{
 #trucazo{
 	opacity: 0;
 }
+
