@@ -320,6 +320,17 @@ header label{
 	padding-bottom: 4rem;
 }
 
+/* Nuevo contenedor para el ícono y el formulario, que ahora utiliza flexbox */
+
+.contact-content {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem; /* Espacio entre el ícono y el formulario */
+    padding-top: 2rem;
+}
+
 .contactos .image{
 	flex: 1 1 40rem;
 }
@@ -569,4 +580,5 @@ header label{
 #trucazo{
 	opacity: 0;
 }
+
 
