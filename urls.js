@@ -3,10 +3,10 @@ const enlace = document.getElementById("enlace-a-instagram");
 enlace.href = urlInstagram;
 enlace.target = "_blank"; */
 
-// La URL base que quieres asignar a todos los enlaces
+// URL base 
 const urlInstagram = "https://www.instagram.com/iconicastill/";
 
-// Seleccionamos TODOS los elementos con la clase "enlace-instagram"
+// TODOS los elementos con la clase "enlace-instagram"
 const enlaces = document.querySelectorAll(".enlace-instagram");
 
 // Recorremos cada enlace encontrado
