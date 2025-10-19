@@ -7,7 +7,7 @@
 	--color04: #ffffff;
 	--color05: linear-gradient(90deg, var(--color02), var(--color01));
 	--color06: rgb(255, 255, 255);
-	--color07: rgb(249 255 0):
+	--color07: #f9ff00;
 }
 
 *{
@@ -591,6 +591,7 @@ header label{
 #trucazo{
 	opacity: 0;
 }
+
 
 
 
