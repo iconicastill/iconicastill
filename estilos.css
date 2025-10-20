@@ -396,7 +396,6 @@ header label{
 
 .footer{
 	padding-top: 3rem;
-	/* background: url(/img/footer-fondo.png) no-repeat; */
 	background-color: var(--color03);
 	background-size: cover;
 	background-position: center;
@@ -591,6 +590,7 @@ header label{
 #trucazo{
 	opacity: 0;
 }
+
 
 
 
