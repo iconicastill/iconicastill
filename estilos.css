@@ -473,7 +473,7 @@ header label{
 	font-weight: normal;
 	letter-spacing: .1rem;
 	color: var(--color06);
-	border-top: var(--color04);
+	border-top: 0.2rem solid var(--color04);
 	padding: 2.5rem 1rem;
 	text-align: center;
 }
@@ -590,6 +590,7 @@ header label{
 #trucazo{
 	opacity: 0;
 }
+
 
 
 
