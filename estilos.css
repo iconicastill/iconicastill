@@ -394,6 +394,11 @@ header label{
 
 }
 
+.contador{
+	font-size: 1.7rem;
+    color: #666;
+}
+
 .footer{
 	padding-top: 3rem;
 	background-color: var(--color03);
@@ -590,6 +595,7 @@ header label{
 #trucazo{
 	opacity: 0;
 }
+
 
 
 
