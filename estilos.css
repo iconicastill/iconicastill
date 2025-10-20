@@ -3,7 +3,7 @@
 :root{
 	--color01: #000000;
 	--color02: #7a7a7a;
-	--color03: #000000;
+	--color03: #008080;
 	--color04: #ffffff;
 	--color05: linear-gradient(90deg, var(--color02), var(--color01));
 	--color06: rgb(255, 255, 255);
@@ -591,6 +591,7 @@ header label{
 #trucazo{
 	opacity: 0;
 }
+
 
 
 
