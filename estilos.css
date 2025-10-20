@@ -163,12 +163,12 @@ header label{
 
 .inicio .content h3{
 	font-size: 7.5rem;
-	color: var(--color04);
+	color: var(--color07);
 	text-transform: uppercase;
 }
 
 .inicio .content h3 span{
-	color: var(--color07);
+	color: var(--color04);
 	text-transform: uppercase;
 }
 
@@ -591,6 +591,7 @@ header label{
 #trucazo{
 	opacity: 0;
 }
+
 
 
 
