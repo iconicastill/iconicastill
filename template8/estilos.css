@@ -106,7 +106,7 @@ header .logo{
 }
 
 header .logo span{
-	color: var(--color02);
+	color: var(--color03);
 }
 
 header .navbar a{
@@ -145,21 +145,6 @@ header label{
 	padding: 10rem 5rem 10rem 5rem;
 	border-radius: 1rem;
 }
-
-/* .inicio .image img{
-	position: relative;
-	width: 25vh;
-	animation: float 3s linear infinite;
-}
-
-@keyframes float{
-	0%, 100%{
-		transform: translateY(0rem);
-	}
-	50%{
-		transform: translateY(-3.5rem);
-	}
-} */
 
 .inicio .content h3{
 	font-size: 7.5rem;
