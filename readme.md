@@ -20,7 +20,7 @@ Who maintains and contributes to the project.
   Español:
 
 Qué hace el proyecto.
-  Esta es mi primera pagina wed, la uso para practicar.
+  Esta es mi primera pagina web, la uso para practicar.
   
 Por qué el proyecto es útil.
   Me es util para mostrar lo que se hacer. 
