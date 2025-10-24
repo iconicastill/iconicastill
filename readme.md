@@ -33,3 +33,13 @@ Dónde pueden recibir ayuda los usuarios con tu proyecto
   
 Quién mantiene y contribuye con el proyecto.
   Por ahora es un proyecto de solo mi persona y nada mas. 
+
+---
+
+He agrgado muchas cosas a la fecha 24/10/2025
+
+---
+
+Según mis fotos en Google fotos, comencé a estudiar programación web el 23/07/2020 (mi primer certificado).
+
+---
