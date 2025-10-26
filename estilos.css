@@ -256,21 +256,22 @@ header label{
 	margin: 7rem 0 5rem;
 }
 
-.instagram-posts {
-	/* Estilos para el contenedor de las publicaciones */
+/*
+.instagram-posts {
 	padding: 2rem;
 	background-color: rgba(0, 0, 0, 0.2);
 	border-radius: 1rem;
 }
+*/
 
 .post-contenedor {
-	/* Usamos Flexbox para organizar las publicaciones */
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 2rem; /* Espacio entre las publicaciones */
-	margin-top: 2rem;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
 
 .instagram-posts h3.heading {
 	/* Estilos para el encabezado de la sección */
