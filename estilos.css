@@ -142,7 +142,7 @@ header label{
 
 .inicio-text{
 	background-color: rgba(0, 0, 0, 0.2);
-	padding: 10rem 5rem 10rem 5rem;
+	padding: 7rem 5rem 7rem 5rem;
 	border-radius: 1rem;
 }
 
@@ -257,7 +257,8 @@ header label{
 }
 
 /*
-.instagram-posts {
+.instagram-posts {
+
 	padding: 2rem;
 	background-color: rgba(0, 0, 0, 0.2);
 	border-radius: 1rem;
@@ -271,7 +272,8 @@ header label{
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 10px;
-}
+}
+
 
 .instagram-posts h3.heading {
 	/* Estilos para el encabezado de la sección */
@@ -596,6 +598,7 @@ header label{
 #trucazo{
 	opacity: 0;
 }
+
 
 
 
