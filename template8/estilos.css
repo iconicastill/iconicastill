@@ -248,21 +248,24 @@ header label{
 	position: relative;
 }
 
-.contactos form .inputcaja input, 
-.contactos form .inputcaja textarea{
-	width: 100%;
-	background: none;
-	color: #333;
-	margin: 1.5rem 0;
-	padding: .5rem 0;
-	font-size: 1.7rem;
-	border-bottom: .1rem solid rgba(0, 0, 0, .1);
-	text-transform: none;
+.contactos form .inputcaja input,
+.contactos form .inputcaja textarea {
+    width: 100%;
+    background: none;
+    color: #333;
+    margin: 1.5rem 0;
+    padding: 0.5rem 0;
+    font-size: 1.7rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+    text-transform: none;
+    box-sizing: border-box;
 }
 
-.contactos form .inputcaja textarea{
-	resize: none;
-	height: 13rem;
+.contactos form .inputcaja textarea {
+    resize: none;
+    overflow: hidden; /* oculta el scroll */
+    min-height: 13rem; /* altura base */
+    transition: height 0.2s ease; /* animación suave al crecer */
 }
 
 .contactos form .inputcaja label{
