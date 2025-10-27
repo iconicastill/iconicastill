@@ -226,7 +226,7 @@ header label{
 /* Nuevo contenedor para el ícono y el formulario, que ahora utiliza flexbox */
 
 .contact-content {
-	display: flex;
+	display: initial;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
