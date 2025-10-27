@@ -1,8 +1,13 @@
-// Contador de textarea
+// Contador + crecimiento automático del textarea
 
-  const textarea = document.getElementById("mensaje");
-  const usados = document.getElementById("usados");
+const textarea = document.getElementById("mensaje");
+const usados = document.getElementById("usados");
 
-  textarea.addEventListener("input", () => {
-    usados.textContent = textarea.value.length;
-  });
+textarea.addEventListener("input", () => {
+  // Actualizar contador
+  usados.textContent = textarea.value.length;
+
+  // Ajustar altura automáticamente
+  textarea.style.height = "auto";
+  textarea.style.height = textarea.scrollHeight + "px";
+});
