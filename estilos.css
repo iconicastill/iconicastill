@@ -498,10 +498,11 @@ header label{
 		padding-top: 6rem;
 		padding-bottom: 2rem;
 	}
+	/*
 	section#inicio{
 		padding-top: 15rem;
 	}
-	
+	*/
 	.contactos .image img{
 	width: 50%;
 	padding: 2rem;
@@ -598,6 +599,7 @@ header label{
 #trucazo{
 	opacity: 0;
 }
+
 
 
 
