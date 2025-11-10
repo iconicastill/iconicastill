@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Switch de Idioma</title>
+</head>
+<body>
+
+<h1 data-texto="saludo"></h1>
+<p data-texto="descripcion"></p>
+
+<button id="switchLang">Cambiar a Inglés</button>
+
+<script>
+  // 1️⃣ Textos de los dos idiomas
+  const textos = {
+    es: {
+      saludo: "Hola, bienvenido a mi página",
+      descripcion: "Esta es la versión en español"
+    },
+    en: {
+      saludo: "Hello, welcome to my website",
+      descripcion: "This is the English version"
+    }
+  };
+
+  // 2️⃣ Idioma por defecto
+  let idiomaActual = "es";
+
+  // 3️⃣ Función para cambiar idioma
+  function cambiarIdioma(idioma) {
+    idiomaActual = idioma;
+    document.querySelectorAll("[data-texto]").forEach(el => {
+      const key = el.getAttribute("data-texto");
+      el.innerText = textos[idioma][key];
+    });
+
+    // Cambiar texto del botón
+    document.getElementById("switchLang").innerText =
+      idioma === "es" ? "Cambiar a Inglés" : "Cambiar a Español";
+  }
+
+  // 4️⃣ Evento del botón
+  document.getElementById("switchLang").addEventListener("click", () => {
+    cambiarIdioma(idiomaActual === "es" ? "en" : "es");
+  });
+
+  // 5️⃣ Inicializar con español
+  cambiarIdioma(idiomaActual);
+</script>
+
+</body>
+</html>
