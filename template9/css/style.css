@@ -20,6 +20,31 @@ nav button {
   padding: 5px 10px; 
   cursor: pointer; 
 }
+
+.navbar {
+  display: flex;
+  gap: 10px; /* espacio entre elementos */
+  padding: 10px;
+  background-color: #006666;
+  align-items: center;
+}
+
+.navbar button,
+.navbar .nav-link {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: #008080;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.navbar button:hover,
+.navbar .nav-link:hover {
+  background-color: #004c4c;
+}
     
 section { 
   padding: 20px; 
