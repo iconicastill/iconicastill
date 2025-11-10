@@ -363,7 +363,6 @@ li {
 .footer .caja-contenedor{
 	display: flex;
 	flex-wrap: wrap;
-	text-transform: capitalize;
 	margin-left: 5em;
 	margin-right: 5em;
 }
