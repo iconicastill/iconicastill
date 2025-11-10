@@ -2,50 +2,103 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Switch de Idioma</title>
+  <title>Turismo en Ciudad Ficticia</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background-color: #008080; color: white; padding: 20px; text-align: center; }
+    nav { background-color: #006666; padding: 10px; text-align: center; }
+    nav button { margin: 0 5px; padding: 5px 10px; cursor: pointer; }
+    section { padding: 20px; }
+    .atraccion { border: 1px solid #ccc; margin: 10px 0; padding: 10px; border-radius: 5px; }
+  </style>
 </head>
 <body>
 
-<h1 data-texto="saludo"></h1>
-<p data-texto="descripcion"></p>
+<header>
+  <h1 data-texto="titulo"></h1>
+  <button id="switchLang">Cambiar a Inglés</button>
+</header>
 
-<button id="switchLang">Cambiar a Inglés</button>
+<nav>
+  <button data-texto="navInicio"></button>
+  <button data-texto="navAtracciones"></button>
+  <button data-texto="navHoteles"></button>
+  <button data-texto="navContacto"></button>
+</nav>
+
+<section id="inicio">
+  <h2 data-texto="inicioTitulo"></h2>
+  <p data-texto="inicioDescripcion"></p>
+</section>
+
+<section id="atracciones">
+  <h2 data-texto="atraccionesTitulo"></h2>
+  <div class="atraccion" data-texto="atraccion1"></div>
+  <div class="atraccion" data-texto="atraccion2"></div>
+</section>
+
+<section id="hoteles">
+  <h2 data-texto="hotelesTitulo"></h2>
+  <p data-texto="hotelesDescripcion"></p>
+</section>
+
+<section id="contacto">
+  <h2 data-texto="contactoTitulo"></h2>
+  <p data-texto="contactoDescripcion"></p>
+</section>
 
 <script>
-  // 1️⃣ Textos de los dos idiomas
   const textos = {
     es: {
-      saludo: "Hola, bienvenido a mi página",
-      descripcion: "Esta es la versión en español"
+      titulo: "Turismo en Ciudad Ficticia",
+      navInicio: "Inicio",
+      navAtracciones: "Atracciones",
+      navHoteles: "Hoteles",
+      navContacto: "Contacto",
+      inicioTitulo: "Bienvenido a Ciudad Ficticia",
+      inicioDescripcion: "Descubre los mejores lugares para visitar y disfrutar.",
+      atraccionesTitulo: "Atracciones principales",
+      atraccion1: "Parque Central: El corazón verde de la ciudad.",
+      atraccion2: "Museo Histórico: Aprende sobre nuestra historia.",
+      hotelesTitulo: "Hoteles recomendados",
+      hotelesDescripcion: "Hospédate en los mejores hoteles con vistas espectaculares.",
+      contactoTitulo: "Contáctanos",
+      contactoDescripcion: "Para más información, llámanos o envíanos un correo."
     },
     en: {
-      saludo: "Hello, welcome to my website",
-      descripcion: "This is the English version"
+      titulo: "Tourism in Fictitious City",
+      navInicio: "Home",
+      navAtracciones: "Attractions",
+      navHoteles: "Hotels",
+      navContacto: "Contact",
+      inicioTitulo: "Welcome to Fictitious City",
+      inicioDescripcion: "Discover the best places to visit and enjoy.",
+      atraccionesTitulo: "Main Attractions",
+      atraccion1: "Central Park: The green heart of the city.",
+      atraccion2: "History Museum: Learn about our past.",
+      hotelesTitulo: "Recommended Hotels",
+      hotelesDescripcion: "Stay at the best hotels with spectacular views.",
+      contactoTitulo: "Contact Us",
+      contactoDescripcion: "For more information, call or email us."
     }
   };
 
-  // 2️⃣ Idioma por defecto
   let idiomaActual = "es";
 
-  // 3️⃣ Función para cambiar idioma
   function cambiarIdioma(idioma) {
     idiomaActual = idioma;
     document.querySelectorAll("[data-texto]").forEach(el => {
       const key = el.getAttribute("data-texto");
       el.innerText = textos[idioma][key];
     });
-
-    // Cambiar texto del botón
     document.getElementById("switchLang").innerText =
-      idioma === "es" ? "Cambiar a Inglés" : "Cambiar a Español";
+      idioma === "es" ? "Cambiar a Inglés" : "Switch to Spanish";
   }
 
-  // 4️⃣ Evento del botón
   document.getElementById("switchLang").addEventListener("click", () => {
     cambiarIdioma(idiomaActual === "es" ? "en" : "es");
   });
 
-  // 5️⃣ Inicializar con español
   cambiarIdioma(idiomaActual);
 </script>
 
