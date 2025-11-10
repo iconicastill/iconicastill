@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- ======= GOOGLE ANALYTICS ======= -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLVHKPQ6N2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-WLVHKPQ6N2');
+  </script>
+
+  <!-- ======= METADATOS ======= -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Desarrollador y Diseñador Web profesional.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de caracteres</title>
+
+  <!-- ======= ICONOS Y ESTILOS ======= -->
+  <link rel="shortcut icon" href="/img/favicon_io/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <!-- ======= ENCABEZADO PRINCIPAL ======= -->
+  <header>
+    <a href="#" class="logo">
+      <span>BY</span> ICONICASTILL
+    </a>
+
+    <!-- Menú responsive -->
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar" class="fa fa-bars"></label>
+
+    <nav class="navbar" aria-label="Menú principal">
+      <a href="../index.html">Desarrollador</a>
+      <a href="../portafolio.html">Portafolio</a>
+      <a href="#acerca_de">Contador</a>
+    </nav>
+  </header>
+
+  <!-- ======= CONTENIDO PRINCIPAL ======= -->
+  <main>
+    <section id="contactos" class="contactos">
+      <div class="contact-content">
+        <form id="contact-form">
+          <h2 class="heading">Escribe o pega el texto:</h2>
+
+          <div class="inputcaja">
+            <textarea name="mensaje" id="mensaje" required></textarea>
+            <label for="mensaje">Mensaje</label>
+            <div class="contador">
+              Caracteres escritos: <span id="usados">0</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= PIE DE PÁGINA ======= -->
+  <footer class="footer">
+    <div class="caja-contenedor">
+      <article class="caja">
+        <h3>Noticias e información</h3>
+        <p class="texto">¡Contáctame para crear una solución web profesional y efectiva que impulse tu éxito!</p>
+      </article>
+
+      <article class="caja">
+        <h3>Redes Sociales</h3>
+        <a href="https://www.linkedin.com/in/nicolas-castillo-camacho/" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </article>
+
+      <article class="caja">
+        <h3>Más información</h3>
+
+        <div class="info">
+          <i class="fa-solid fa-phone"></i>
+          <p>+1 809-846-8085</p>
+        </div>
+
+        <div class="info">
+          <i class="fa-solid fa-envelope"></i>
+          <p>nicolascastillocamacho@gmail.com</p>
+        </div>
+
+        <div class="info">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Santo Domingo, RD<br>10605</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="creditos">© Copyright 2022 @iconicastill</p>
+  </footer>
+
+  <!-- ======= SCRIPTS ======= -->
+  <script src="script.js"></script>
+
+  <noscript>
+    <h3>
+      La página que estás viendo requiere el uso de JavaScript.<br>
+      Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.
+    </h3>
+  </noscript>
+</body>
+</html>

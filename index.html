@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Documento HTML5 en español -->
+<head>
+  <!-- ======= METADATOS ======= -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Desarrollador y Diseñador Web profesional.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicolás Castillo Camacho</title>
+
+  <!-- ======= ICONOS Y ESTILOS ======= -->
+  <link rel="shortcut icon" href="/img/favicon_io/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ======= GOOGLE ANALYTICS ======= -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLVHKPQ6N2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-WLVHKPQ6N2');
+  </script>
+</head>
+
+<body>
+  <!-- ======= ENCABEZADO PRINCIPAL ======= -->
+  <header>
+    <a href="#" class="logo">
+      <span>NICOLAS</span> D. CASTILLO CAMACHO
+    </a>
+
+    <!-- Menú responsive -->
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar" class="fa fa-bars"></label>
+
+    <nav class="navbar" aria-label="Menú principal">
+      <a href="#inicio">Acerca de mí</a>
+      <a href="#acerca_de">Certificaciones</a>
+      <a href="#contactos">Contactos</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="portafolio.html">Portafolio</a>
+    </nav>
+  </header>
+
+  <!-- ======= CONTENIDO PRINCIPAL ======= -->
+  <main>
+    <!-- === Sección de presentación === -->
+    <section id="inicio" class="inicio">
+      <div class="content">
+        <div class="inicio-text">
+          <h1><span>Yo</span> soy <span>Nicolás</span>, Desarrollador Web</h1>
+          <p>Creo sitios y aplicaciones web personalizados y atractivos que combinan funcionalidad y diseño excepcional.</p>
+        </div>
+      </div>
+
+      <figure class="image">
+        <img src="/img/android-chrome-512x512.png" alt="Logo personal de Nicolás Castillo">
+      </figure>
+    </section>
+
+    <!-- === Sección de conocimientos / certificaciones === -->
+    <section id="acerca_de" class="acerca_de">
+      <h2 class="heading">CONOCIMIENTOS</h2>
+      <div class="columna">
+        <hr><br>
+        <article class="content">
+          <h3>REDES SOCIALES <span>ASISTENCIA 100%</span></h3>
+          <ul>
+            <li>INSTAGRAM</li>
+            <li>FACEBOOK</li>
+            <li>WHATSAPP</li>
+          </ul>
+
+          <h3>HERRAMIENTAS / SOFTWARES DE DISEÑO</h3>
+          <ul>
+            <li>ADOBE PHOTOSHOP</li>
+            <li>CANVA</li>
+            <li>GIMP</li>
+          </ul>
+
+          <h3><span>PROGRAMACIÓN WEB</span></h3>
+          <ul>
+            <li>Frontend
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript
+                  <ul>
+                    <li>React</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Backend
+              <ul>
+                <li>PHP
+                  <ul>
+                    <li>Laravel</li>
+                  </ul>
+                </li>
+                <li>MySQL</li>
+                <li>ASP.NET</li>
+                <li>Python
+                  <ul>
+                    <li>Django</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Botón de contacto -->
+          <div class="bottons" style="text-align:center;">
+            <a href="https://wa.me/+18098468085" class="btn" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- === Sección de contacto === -->
+    <section id="contactos" class="contactos">
+      <h2 class="heading">Formulario de contacto</h2>
+
+      <div class="contact-content">
+        <figure class="image">
+          <img src="/img/form_img.png" alt="Icono de sobre" width="75">
+        </figure>
+
+        <form id="contact-form">
+          <h3 class="heading">Enviar mensaje</h3>
+
+          <div class="inputcaja">
+            <input type="text" name="nombre" id="nombre" required>
+            <label for="nombre">Nombre</label>
+          </div>
+
+          <div class="inputcaja">
+            <input type="email" name="email" id="email" required>
+            <label for="email">Email</label>
+          </div>
+
+          <div class="inputcaja">
+            <input type="tel" name="telefono" id="telefono" required>
+            <label for="telefono">Teléfono</label>
+          </div>
+
+          <div class="inputcaja">
+            <textarea name="mensaje" id="mensaje" required></textarea>
+            <label for="mensaje">Mensaje</label>
+            <div class="contador">
+              Caracteres escritos: <span id="usados">0</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn">ENVIAR</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= PIE DE PÁGINA ======= -->
+  <footer class="footer">
+    <div class="caja-contenedor">
+      <article class="caja">
+        <h3>Noticias e información</h3>
+        <p class="texto">¡Contáctame para crear una solución web profesional y efectiva que impulse tu éxito!</p>
+      </article>
+
+      <article class="caja">
+        <h3>Redes Sociales</h3>
+        <a href="https://www.linkedin.com/in/nicolas-castillo-camacho/" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </article>
+
+      <article class="caja">
+        <h3>Más información</h3>
+
+        <div class="info">
+          <i class="fa-solid fa-phone"></i>
+          <p>+1 809-846-8085</p>
+        </div>
+
+        <div class="info">
+          <i class="fa-solid fa-envelope"></i>
+          <p>nicolascastillocamacho@gmail.com</p>
+        </div>
+
+        <div class="info">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Santo Domingo, RD<br>10702</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="creditos">© Copyright 2022 @iconicastill</p>
+  </footer>
+
+  <!-- ======= SCRIPTS ======= -->
+  <script src="script.js"></script>
+
+  <noscript>
+    <h3>
+      La página que estás viendo requiere el uso de JavaScript.<br>
+      Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.
+    </h3>
+  </noscript>
+</body>
+</html>
