@@ -156,7 +156,7 @@ header label{
 
 .inicio-text{
 	background-color: rgba(0, 0, 0, 0.2);
-	padding: 7rem 5rem;
+	padding: 4rem 5rem;
 	border-radius: 1rem;
 }
 
@@ -180,7 +180,7 @@ header label{
 }
 
 .inicio .content h1{
-	font-size: 5rem;
+	font-size: 4rem;
 	color: var(--color05);
 	text-transform: uppercase;
 }
@@ -191,7 +191,7 @@ header label{
 }
 
 .inicio .content p{
-	font-size: 4rem;
+	font-size: 3rem;
 	color: #ffffff;
 	padding: 1rem 0;
 }
