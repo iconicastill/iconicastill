@@ -161,13 +161,13 @@ header label{
 }
 
 /* CORRECCIÓN: en tu HTML la imagen está dentro de <figure class="image">,
-   no existe etiqueta <image>, así que aplicamos el selector correcto */
+   no existe etiqueta <image>, así que aplicamos el selector correcto 
 .inicio .image img{
 	position: relative;
 	width: 25vh;
 	animation: float 3s linear infinite;
 	margin: 2rem;
-}
+} */
 
 /* Animación flotante para la imagen */
 @keyframes float{
@@ -290,6 +290,7 @@ li {
 .contactos .image img{
 	width: 80%;
 	padding: 2rem;
+	animation: float 3s linear infinite;
 }
 
 .contactos form{
