@@ -50,3 +50,18 @@ function cambiarIdioma(idioma) {
 });
 
   cambiarIdioma(idiomaActual);
+
+/* MODO OSCURO */
+
+const btnModoOscuro = document.getElementById('modoOscuro');
+
+btnModoOscuro.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  
+  // Cambiar texto del botón
+  if(document.body.classList.contains('dark-mode')) {
+    btnModoOscuro.textContent = '☀️ Modo Claro';
+  } else {
+    btnModoOscuro.textContent = '🌙 Modo Oscuro';
+  }
+});
