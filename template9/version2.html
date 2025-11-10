@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Turismo en Ciudad Ficticia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/aside.css">
+</head>
+<body>
+
+<header>
+  <h1 data-texto="titulo"></h1>
+  <button id="switchLang">Cambiar a Inglés</button>
+</header>
+
+<nav>
+  <button data-texto="navInicio"></button>
+  <button data-texto="navAtracciones"></button>
+  <button data-texto="navHoteles"></button>
+  <button data-texto="navContacto"></button>
+</nav>
+
+<!-- Contenedor principal para secciones + aside -->
+<div class="main-container">
+  
+  <div class="content">
+    <section id="inicio">
+      <h2 data-texto="inicioTitulo"></h2>
+      <p data-texto="inicioDescripcion"></p>
+    </section>
+
+    <section id="atracciones">
+      <h2 data-texto="atraccionesTitulo"></h2>
+      <div class="atraccion" data-texto="atraccion1"></div>
+      <div class="atraccion" data-texto="atraccion2"></div>
+    </section>
+
+    <section id="hoteles">
+      <h2 data-texto="hotelesTitulo"></h2>
+      <p data-texto="hotelesDescripcion"></p>
+    </section>
+
+    <section id="contacto">
+      <h2 data-texto="contactoTitulo"></h2>
+      <p data-texto="contactoDescripcion"></p>
+    </section>
+  </div>
+
+  <aside>
+    <h3>Enlaces útiles</h3>
+    <a href="../index.html">Desarrollador</a><br>
+    <a href="../portafolio.html">Portafolio</a><br>
+    <h3>Información extra</h3>
+    <p>Horarios de atención: 9:00 AM - 6:00 PM</p>
+    <p>Teléfono: +1 555 123 4567</p>
+  </aside>
+
+</div>
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
