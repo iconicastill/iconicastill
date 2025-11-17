@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Galería de Códigos QR</title>
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+<style>
+    body {
+        font-family: sans-serif;
+        background: #f5f5f5;
+        padding: 30px;
+        text-align: center;
+    }
+    h1 {
+        margin-bottom: 10px;
+    }
+    input {
+        width: 300px;
+        padding: 10px;
+        font-size: 18px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        max-width: 1000px;
+        margin: auto;
+    }
+    .card {
+        background: white;
+        border-radius: 12px;
+        padding: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+        margin-bottom: 10px;
+    }
+    canvas {
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+
+<h1>Galería de Códigos QR</h1>
+<p>Escribe texto y se generará un QR en cada estilo/lenguaje:</p>
+
+<input id="texto" placeholder="Escribe aquí..." oninput="actualizarQRs()">
+
+<div class="grid">
+
+    <div class="card">
+        <h3>Python</h3>
+        <canvas id="qr1"></canvas>
+    </div>
+
+    <div class="card">
+        <h3>JavaScript (Node.js)</h3>
+        <canvas id="qr2"></canvas>
+    </div>
+
+    <div class="card">
+        <h3>JavaScript (Browser)</h3>
+        <canvas id="qr3"></canvas>
+    </div>
+
+    <div class="card">
+        <h3>PHP</h3>
+        <canvas id="qr4"></canvas>
+    </div>
+
+    <div class="card">
+        <h3>Java</h3>
+        <canvas id="qr5"></canvas>
+    </div>
+
+    <div class="card">
+        <h3>C#</h3>
+        <canvas id="qr6"></canvas>
+    </div>
+
+    <div class="card">
+        <h3>Go</h3>
+        <canvas id="qr7"></canvas>
+    </div>
+
+    <div class="card">
+        <h3>Ruby</h3>
+        <canvas id="qr8"></canvas>
+    </div>
+
+    <div class="card">
+        <h3>Extra (Simulación)</h3>
+        <canvas id="qr9"></canvas>
+    </div>
+
+</div>
+
+<script>
+function generarQR(elementId, text) {
+    const canvas = document.getElementById(elementId);
+    QRCode.toCanvas(canvas, text || " ", { width: 200 }, function (error) {
+        if (error) console.error(error);
+    });
+}
+
+function actualizarQRs() {
+    const text = document.getElementById("texto").value;
+
+    for (let i = 1; i <= 9; i++) {
+        generarQR("qr" + i, text);
+    }
+}
+
+// Generar QR inicial vacío
+actualizarQRs();
+</script>
+
+</body>
+</html>
