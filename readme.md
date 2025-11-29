@@ -16,7 +16,9 @@ Where users can get help with your project
   
 Who maintains and contributes to the project.
   For now it is a project of only my person and nothing else.
-  
+
+---
+
   Español:
 
 Qué hace el proyecto.
@@ -29,7 +31,7 @@ Cómo pueden comenzar los usuarios con el proyecto.
   Solo observa el codigo e inspecciona el funcionamiento de la pagina en el navegador a la fecha no hay mucho que ver 17/02/2023.
 
 Dónde pueden recibir ayuda los usuarios con tu proyecto
-  Solo escribeme para mas informacion @nicolascastillo200 en instagram.
+  Solo escribeme para mas informacion @iconicastill en instagram.
   
 Quién mantiene y contribuye con el proyecto.
   Por ahora es un proyecto de solo mi persona y nada mas. 
@@ -42,4 +44,4 @@ He agrgado muchas cosas a la fecha 24/10/2025
 
 Según mis fotos en Google fotos, comencé a estudiar programación web el 23/07/2020 (mi primer certificado).
 
----
+
