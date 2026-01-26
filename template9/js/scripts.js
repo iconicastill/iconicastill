@@ -13,7 +13,8 @@ const textos = {
       hotelesTitulo: "Hoteles recomendados",
       hotelesDescripcion: "Hospédate en los mejores hoteles con vistas espectaculares.",
       contactoTitulo: "Contáctanos",
-      contactoDescripcion: "Para más información, llámanos o envíanos un correo."
+      contactoDescripcion: "Para más información, llámanos o envíanos un correo.",
+      modoOscuro: "🌙 Modo Oscuro"
     },
     en: {
       titulo: "Tourism in Fictitious City",
@@ -29,7 +30,8 @@ const textos = {
       hotelesTitulo: "Recommended Hotels",
       hotelesDescripcion: "Stay at the best hotels with spectacular views.",
       contactoTitulo: "Contact Us",
-      contactoDescripcion: "For more information, call or email us."
+      contactoDescripcion: "For more information, call or email us.",
+      modoOscuro: "🌙 Dark Mode"
     }
 };
 
