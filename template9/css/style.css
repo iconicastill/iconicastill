@@ -1,4 +1,4 @@
-/* ==================== MODO CLARO (por defecto) ==================== */
+/* MODO CLARO (por defecto) */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -90,7 +90,8 @@ aside a:hover {
   color: #004c4c;
 }
 
-/* ==================== MODO OSCURO ==================== */
+/* MODO OSCURO */
+
 body.dark-mode {
   background-color: #121212;
   color: #e0e0e0;
@@ -135,6 +136,8 @@ body.dark-mode aside a {
 body.dark-mode aside a:hover {
   color: #00cccc;
 }
+
+/* Responisividad */
 
 @media(max-width:768px){
 
