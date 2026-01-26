@@ -1,4 +1,13 @@
-# redesigned-telegram
+# iconicastill — Sitio estático / Portafolio
+
+Este repositorio contiene versiones y plantillas del portafolio personal de Nicolás Castillo (iconicastill). Es una página estática en HTML/CSS/JS pensada para mostrar proyectos, servicios y datos de contacto.
+
+Contenido
+- index.html — página principal
+- portafolio.html — listado/links a proyectos
+- template1..template8/ — plantillas y variantes
+- estilos.css — estilos compartidos
+- script.js — lógica para formularios / comportamiento
 
   English:
   
