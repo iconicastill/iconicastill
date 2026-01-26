@@ -15,7 +15,7 @@ const textos = {
       contactoTitulo: "Contáctanos",
       contactoDescripcion: "Para más información, llámanos o envíanos un correo.",
   modoOscuro: "🌙 Modo Oscuro",
-  modoClaro: "☀️ Modo Claro"
+  modoClaro: "☀️ Modo Claro",
       enlacesUtiles: "Enlaces Utiles",
       informacionExtra: "Información extra",
       HorariosDeAtencion: "Horarios de atención: 9:00 AM - 6:00 PM",
@@ -39,7 +39,7 @@ const textos = {
       contactoTitulo: "Contact Us",
       contactoDescripcion: "For more information, call or email us.",
   modoOscuro: "🌙 Dark Mode",
-  modoClaro: "☀️ Light Mode"
+  modoClaro: "☀️ Light Mode",
       enlacesUtiles: "Useful Links",
       informacionExtra: "Supplementary information",
       HorariosDeAtencion: "Business hours: 9:00 AM - 6:00 PM",
