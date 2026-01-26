@@ -20,6 +20,16 @@ nav {
   text-align: center;
 }
 
+button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #008080;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
 nav button {
   margin: 0 5px;
   padding: 5px 10px;
