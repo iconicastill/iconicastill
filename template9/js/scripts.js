@@ -14,7 +14,8 @@ const textos = {
       hotelesDescripcion: "Hospédate en los mejores hoteles con vistas espectaculares.",
       contactoTitulo: "Contáctanos",
       contactoDescripcion: "Para más información, llámanos o envíanos un correo.",
-      modoOscuro: "🌙 Modo Oscuro",
+  modoOscuro: "🌙 Modo Oscuro",
+  modoClaro: "☀️ Modo Claro"
       enlacesUtiles: "Enlaces Utiles",
       informacionExtra: "Información extra",
       HorariosDeAtencion: "Horarios de atención: 9:00 AM - 6:00 PM",
@@ -37,7 +38,8 @@ const textos = {
       hotelesDescripcion: "Stay at the best hotels with spectacular views.",
       contactoTitulo: "Contact Us",
       contactoDescripcion: "For more information, call or email us.",
-      modoOscuro: "🌙 Dark Mode",
+  modoOscuro: "🌙 Dark Mode",
+  modoClaro: "☀️ Light Mode"
       enlacesUtiles: "Useful Links",
       informacionExtra: "Supplementary information",
       HorariosDeAtencion: "Business hours: 9:00 AM - 6:00 PM",
@@ -51,17 +53,23 @@ let idiomaActual = "es";
 
 function cambiarIdioma(idioma) {
     idiomaActual = idioma;
+
     document.querySelectorAll("[data-texto]").forEach(el => {
       const key = el.getAttribute("data-texto");
       el.innerText = textos[idioma][key];
     });
+
     document.getElementById("switchLang").innerText =
       idioma === "es" ? "Cambiar a Inglés" : "Switch to Spanish";
-}
 
-  document.getElementById("switchLang").addEventListener("click", () => {
-    cambiarIdioma(idiomaActual === "es" ? "en" : "es");
-});
+    // 🔹 ACTUALIZA TEXTO DEL BOTÓN MODO OSCURO
+    const btnModoOscuro = document.getElementById('modoOscuro');
+    const esOscuro = document.body.classList.contains('dark-mode');
+
+    btnModoOscuro.textContent = esOscuro
+      ? textos[idiomaActual].modoClaro
+      : textos[idiomaActual].modoOscuro;
+}
 
   cambiarIdioma(idiomaActual);
 
@@ -71,11 +79,10 @@ const btnModoOscuro = document.getElementById('modoOscuro');
 
 btnModoOscuro.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
-  
-  // Cambiar texto del botón
-  if(document.body.classList.contains('dark-mode')) {
-    btnModoOscuro.textContent = '☀️ Modo Claro';
-  } else {
-    btnModoOscuro.textContent = '🌙 Modo Oscuro';
-  }
+
+  const esOscuro = document.body.classList.contains('dark-mode');
+
+  btnModoOscuro.textContent = esOscuro
+    ? textos[idiomaActual].modoClaro
+    : textos[idiomaActual].modoOscuro;
 });
