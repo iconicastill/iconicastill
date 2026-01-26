@@ -99,7 +99,7 @@ body.dark-mode {
 }
 
 body.dark-mode header {
-  background-color: #1f7a7a;
+  background-color: #1f7a7a38;
   color: #ffffff;
 }
 
@@ -108,7 +108,7 @@ body.dark-mode nav {
 }
 
 body.dark-mode nav button {
-  background-color: #1f7a7a;
+  background-color: #0c3333;
   color: #ffffff;
 }
 
