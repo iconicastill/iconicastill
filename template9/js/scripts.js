@@ -14,7 +14,13 @@ const textos = {
       hotelesDescripcion: "Hospédate en los mejores hoteles con vistas espectaculares.",
       contactoTitulo: "Contáctanos",
       contactoDescripcion: "Para más información, llámanos o envíanos un correo.",
-      modoOscuro: "🌙 Modo Oscuro"
+      modoOscuro: "🌙 Modo Oscuro",
+      enlacesUtiles: "Enlaces Utiles",
+      informacionExtra: "Información extra",
+      HorariosDeAtencion: "Horarios de atención: 9:00 AM - 6:00 PM",
+      telefono: "Teléfono: +1 809-846-8085",
+      desarrollador: "Desarrollador",
+      portafolio: "Portafolio"
     },
     en: {
       titulo: "Tourism in Fictitious City",
@@ -31,7 +37,13 @@ const textos = {
       hotelesDescripcion: "Stay at the best hotels with spectacular views.",
       contactoTitulo: "Contact Us",
       contactoDescripcion: "For more information, call or email us.",
-      modoOscuro: "🌙 Dark Mode"
+      modoOscuro: "🌙 Dark Mode",
+      enlacesUtiles: "Useful Links",
+      informacionExtra: "Supplementary information",
+      HorariosDeAtencion: "Business hours: 9:00 AM - 6:00 PM",
+      telefono: "Telephone Number: +1 809-846-8085",
+      desarrollador: "Developer",
+      portafolio: "Portfolio"
     }
 };
 
