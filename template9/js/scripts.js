@@ -60,7 +60,7 @@ function cambiarIdioma(idioma) {
     });
 
     document.getElementById("switchLang").innerText =
-      idioma === "es" ? "Cambiar a Inglés" : "Switch to Spanish";
+      idioma === "es" ? "Cambiar a Español" : "Switch to English";
 
     // ACTUALIZA TEXTO DEL BOTÓN MODO OSCURO
     const btnModoOscuro = document.getElementById('modoOscuro');
