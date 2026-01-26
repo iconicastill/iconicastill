@@ -62,7 +62,7 @@ function cambiarIdioma(idioma) {
     document.getElementById("switchLang").innerText =
       idioma === "es" ? "Cambiar a Inglés" : "Switch to Spanish";
 
-    // 🔹 ACTUALIZA TEXTO DEL BOTÓN MODO OSCURO
+    // ACTUALIZA TEXTO DEL BOTÓN MODO OSCURO
     const btnModoOscuro = document.getElementById('modoOscuro');
     const esOscuro = document.body.classList.contains('dark-mode');
 
@@ -71,7 +71,11 @@ function cambiarIdioma(idioma) {
       : textos[idiomaActual].modoOscuro;
 }
 
-  cambiarIdioma(idiomaActual);
+document.getElementById("switchLang").addEventListener("click", () => {
+  cambiarIdioma(idiomaActual === "es" ? "en" : "es");
+});
+
+cambiarIdioma(idiomaActual);
 
 /* MODO OSCURO */
 
