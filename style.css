@@ -148,7 +148,7 @@ header label{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: url(/img/inicio_fondo.jpg) no-repeat;
+	background: url(/img/web/inicio_fondo.webp) no-repeat;
 	background-size: cover;
 	background-position: center;
 	background-color: var(--color03);
