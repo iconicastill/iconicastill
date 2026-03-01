@@ -23,7 +23,9 @@
       
     <p>This is a very simple page.</p>
 
-      <button>Click me</button>
+      <button id="botonFabuloso" class="btn btn-warning btn-lg rounded-pill shadow-lg fw-bold text-uppercase">
+        ✨ ¡Lanzar Arcoíris! ✨
+      </button>
 
     <div class="container mt-5">
       <div class="row">
@@ -57,7 +59,28 @@
    <p class="creditos">© Copyright 2022 @iconicastill</p>
   </footer>
 
-</div>
+</div> <!-- Cierre del container -->
 
+    <!-- 1. El cerebro de Bootstrap (para que los botones y diseño funcionen) -->
+    <script src="https://cdn.jsdelivr.net"></script>
+
+    <!-- 2. La librería del Confeti (para el efecto arcoíris) -->
+    <script src="https://cdn.jsdelivr.net"></script>
+
+    <!-- 3. Tu código personalizado -->
+    <script>
+      const btn = document.querySelector('#botonFabuloso');
+      
+      btn.addEventListener('click', () => {
+        confetti({
+          particleCount: 150,
+          spread: 70,
+          origin: { y: 0.6 },
+          colors: ['#ff0000', '#ffa500', '#ffff00', '#008000', '#0000ff', '#4b0082', '#ee82ee']
+        });
+      });
+    </script>
+    
 </body>
 </html>
+
