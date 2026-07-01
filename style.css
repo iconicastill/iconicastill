@@ -143,6 +143,38 @@ header label{
 	opacity: 0;
 }
 
+/* ANIMACION LOGO */
+.logo.animado span{
+    display: inline-block;
+    animation: salto 0.5s ease forwards;
+    opacity: 0;
+}
+
+/* Retraso entre letras */
+.logo.animado span:nth-child(1){animation-delay:0s;}
+.logo.animado span:nth-child(2){animation-delay:.05s;}
+.logo.animado span:nth-child(3){animation-delay:.10s;}
+.logo.animado span:nth-child(4){animation-delay:.15s;}
+.logo.animado span:nth-child(5){animation-delay:.20s;}
+.logo.animado span:nth-child(6){animation-delay:.25s;}
+.logo.animado span:nth-child(7){animation-delay:.30s;}
+
+@keyframes salto{
+    0%{
+        transform: translateY(-20px);
+        opacity:0;
+    }
+
+    60%{
+        transform: translateY(6px);
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+
 /* SECCIÓN INICIO */
 .inicio{
 	display: flex;
