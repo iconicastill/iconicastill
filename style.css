@@ -5,7 +5,7 @@
 :root{
 	--color01: #000000; /* Color principal (texto oscuro) */
 	--color02: #7a7a7a; /* Color secundario / gris medio */
-	--color03: #004280; /* Verde-azulado, usado en botones y fondo del footer */
+	--color03: #008080; /* Verde-azulado, usado en botones y fondo del footer */
 	--color04: #ffffff; /* Blanco, usado en fondo y texto */
 	--color05: #f9ff00; /* Amarillo brillante (usado en el título de inicio) */
 }
