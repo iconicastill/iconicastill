@@ -118,7 +118,8 @@ header .logo{
 }
 
 header .logo span{
-	color: var(--color02);
+	/*color: var(--color02);*/
+	color: #ff0000;
 }
 
 header .navbar a{
